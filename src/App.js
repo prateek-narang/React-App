@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import Main from './Main';
+import Header from './Header';
+import UserTodoList from './UserTodoList';
 import './css/bootstrap.min.css';
+import './css/custom.css';
 
 class App extends Component {
   render() {
     return (
-      <Main />
+      <div className="container-fluid">
+        <Header />
+        <UserTodoList />
+      </div>
     );
   }
 }
